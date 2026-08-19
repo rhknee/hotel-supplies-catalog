@@ -2,7 +2,22 @@
 
 Statyczna strona katalogu **sezon 2026**: cały tekst, ceny i grafiki z katalogu PDF.
 
-## Oferta
+## Struktura strony
+
+| Sekcja | Zawartość |
+|---|---|
+| Hero | Nazwa, hasło, telefon, skrót oferty |
+| Pasek | Kategorie (materace, ręczniki, pościel, szlafroki) i cztery atuty |
+| O nas | Pełny tekst ze strony 2 katalogu |
+| Materace | Opis produkcji, pokrowiec i wkład |
+| Katalog | Sześć kart produktowych z cenami i pełnymi opisami |
+| Cennik | Wszystkie pozycje i ceny w jednym miejscu |
+| Dlaczego my | Trzy akapity ze strony 6 |
+| HoReCa | Grafika wsparcia dla branży ze strony 8 |
+| Katalog PDF | Podglądy wszystkich ośmiu stron + pobranie PDF |
+| Kontakt | Dane firmy i formularz (otwiera wiadomość e-mail) |
+
+## Cennik
 
 | Pozycja | Cena od |
 |---|---|
@@ -17,9 +32,12 @@ Statyczna strona katalogu **sezon 2026**: cały tekst, ceny i grafiki z katalogu
 
 Otwórz `index.html` albo pobierz [katalog-2026.pdf](katalog-2026.pdf).
 
+Cała treść jest widoczna od razu — nic nie zależy od JavaScriptu.
+JavaScript obsługuje wyłącznie menu mobilne i wysyłkę formularza.
+
 ## Kontakt
 
-Wszystko dla Hoteli (część firmy POLCRUX)  
-Tel. 795-086-007 · mariusz@pikowanie.pl  
-Ul. Towarowa 12, 11-700 Mrągowo  
+Wszystko dla Hoteli (część firmy POLCRUX)
+Tel. 795-086-007 · mariusz@pikowanie.pl
+Ul. Towarowa 12, 11-700 Mrągowo
 [wszystkodlahoteli.pl](https://www.wszystkodlahoteli.pl)
