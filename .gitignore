@@ -6,3 +6,6 @@ desktop.ini
 .env.*
 _catalog-extract/
 _prepare_images.py
+node_modules/
+.wrangler/
+.dev.vars*

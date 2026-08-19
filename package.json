@@ -1,0 +1,13 @@
+{
+  "name": "wszystkodlahoteli",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Statyczna strona katalogu Dobry Sen — Wszystko dla Hoteli",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "4.124.0"
+  }
+}
