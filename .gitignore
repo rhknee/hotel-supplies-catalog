@@ -4,3 +4,5 @@ desktop.ini
 *.log
 .env
 .env.*
+_catalog-extract/
+_prepare_images.py
