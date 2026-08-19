@@ -1,0 +1,14 @@
+{
+	"name": "wszystkodlahoteli-www-redirect",
+	"main": "./src/index.js",
+	"compatibility_date": "2026-08-19",
+	"routes": [
+		{
+			"pattern": "www.wszystkodlahoteli.pl",
+			"custom_domain": true
+		}
+	],
+	"observability": {
+		"enabled": true
+	}
+}

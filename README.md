@@ -46,6 +46,7 @@ Strona stoi na Cloudflare Workers (static assets) pod adresem
 | Katalog plików | `public/` (cała strona; nic poza nim nie jest publikowane) |
 | Konfiguracja | `wrangler.jsonc` |
 | Strona błędu | `public/404.html` (`not_found_handling: 404-page`) |
+| Przekierowanie `www` | Worker `wszystkodlahoteli-www-redirect` (`redirect/`), 301 na adres główny |
 
 Każdy push na `main` uruchamia Workers Builds i wdraża zmiany
 (build command pusty, deploy command `npx wrangler deploy`).
@@ -58,6 +59,12 @@ npx wrangler deploy
 ```
 
 Podgląd lokalny na Workerze: `npx wrangler dev`.
+
+Worker przekierowujący `www` wdraża się osobno i zmienia bardzo rzadko:
+
+```bash
+npx wrangler deploy -c redirect/wrangler.jsonc
+```
 
 ## Kontakt
 
