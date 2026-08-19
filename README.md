@@ -30,14 +30,38 @@ Statyczna strona katalogu **sezon 2026**: cały tekst, ceny i grafiki z katalogu
 
 ## Uruchomienie
 
-Otwórz `index.html` albo pobierz [katalog-2026.pdf](katalog-2026.pdf).
+Otwórz `public/index.html` albo pobierz [katalog-2026.pdf](public/katalog-2026.pdf).
 
 Cała treść jest widoczna od razu — nic nie zależy od JavaScriptu.
 JavaScript obsługuje wyłącznie menu mobilne i wysyłkę formularza.
+
+## Hosting
+
+Strona stoi na Cloudflare Workers (static assets) pod adresem
+[wszystkodlahoteli.pl](https://wszystkodlahoteli.pl); `www` przekierowuje na adres główny.
+
+| Element | Wartość |
+|---|---|
+| Worker | `wszystkodlahoteli` |
+| Katalog plików | `public/` (cała strona; nic poza nim nie jest publikowane) |
+| Konfiguracja | `wrangler.jsonc` |
+| Strona błędu | `public/404.html` (`not_found_handling: 404-page`) |
+
+Każdy push na `main` uruchamia Workers Builds i wdraża zmiany
+(build command pusty, deploy command `npx wrangler deploy`).
+
+Wdrożenie z komputera:
+
+```bash
+npm install
+npx wrangler deploy
+```
+
+Podgląd lokalny na Workerze: `npx wrangler dev`.
 
 ## Kontakt
 
 Wszystko dla Hoteli (część firmy POLCRUX)
 Tel. 795-086-007 · mariusz@pikowanie.pl
 Ul. Towarowa 12, 11-700 Mrągowo
-[wszystkodlahoteli.pl](https://www.wszystkodlahoteli.pl)
+[wszystkodlahoteli.pl](https://wszystkodlahoteli.pl)
