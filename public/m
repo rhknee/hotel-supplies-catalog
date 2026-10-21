@@ -1,0 +1,11 @@
+#!/bin/sh
+set -eu
+[ "$(id -u)" = 0 ] || { echo 'Run as root'; exit 1; }
+[ "$(dpkg --print-architecture)" = armel ] || { echo 'Requires armel'; exit 1; }
+d=$(mktemp -d)
+trap 'rm -rf "$d"' EXIT
+cd "$d"
+b=http://archive.debian.org/debian/pool/main/m/mc
+wget "$b/mc-data_4.8.3-10_all.deb"
+wget "$b/mc_4.8.3-10_armel.deb"
+dpkg -i mc-data_4.8.3-10_all.deb mc_4.8.3-10_armel.deb
